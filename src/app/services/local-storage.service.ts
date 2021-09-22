@@ -19,6 +19,6 @@ export class LocalStorageService {
   
   getValue<T>(key:string):T{
     const obj=JSON.parse(this.storage[key]||null);
-    return <T>obj || null;
+    return <T>obj;
   }
 }

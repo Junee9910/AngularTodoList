@@ -1,6 +1,6 @@
 export interface FilterButton {
     type:Filter;
-    labels:string;
+    label:string;
     isActive:boolean;
 }
 
