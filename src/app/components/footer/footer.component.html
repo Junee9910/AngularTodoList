@@ -5,7 +5,7 @@
         {{length}} item{{length>1?'s':''}}
     </span>
     <div>
-        <button type="button" class="filter-button" *ngFor="let btn of filterButtons" [ngClass]="{'active':btn.isActive}">
+        <button type="button" class="filter-button" *ngFor="let btn of filterButtons" [ngClass]="{active:btn.isActive}">
             {{btn.label}}
         </button>
     </div>
